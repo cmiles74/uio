@@ -1,10 +1,8 @@
-(defproject uio/uio "1.1"
+(defproject org.clojars.cmiles74/uio "1.1.1"
   :description "uio is a Clojure/Java library for accessing HDFS, S3, SFTP and other file systems via a single API."
-
-  :repositories {"cloudera" "https://repository.cloudera.com/content/groups/cdh-releases-rcs"}
-
-  :deploy-repositories [["clojars" {:url           "https://clojars.org/repo/"
-                                    :sign-releases false}]]
+  :url "https://github.com/cmiles74/uio"
+  :license "https://github.com/cmiles74/uio/blob/master/LICENSE"
+  :repositories [["clojars" {:url "https://repo.clojars.org" :cred :gpg}]]
 
   :dependencies [[org.clojure/clojure "1.8.0"]
 
@@ -45,4 +43,4 @@
   ; A trick to prevent IntelliJ from resetting compiler/module version to "1.5"
   :pom-plugins [[org.apache.maven.plugins/maven-compiler-plugin "3.6.1"
                  [:configuration ([:source "1.8"]
-                                   [:target "1.8"])]]])
+                                  [:target "1.8"])]]])
